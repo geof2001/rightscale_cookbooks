@@ -188,6 +188,18 @@ attribute "lb/service/lb_name",
     "lb::do_detach_request"
   ]
 
+attribute "lb/service/lb_port",
+  :display_name => "Load Balance Port",
+  :description =>
+    "Service Port for the load balancer to reach your application servers." +
+    " Example: 8000",
+  :required => "optional",
+  :recipes => [
+    "lb::default",
+    "lb::do_attach_request",
+    "lb::do_detach_request"
+  ]
+
 attribute "lb/service/account_id",
   :display_name => "Load Balance Service ID",
   :description =>
