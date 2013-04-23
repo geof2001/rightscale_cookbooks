@@ -188,7 +188,7 @@ attribute "lb/service/lb_name",
     "lb::do_detach_request"
   ]
 
-attribute "lb/service/lb_port",
+attribute "lb/backend_port",
   :display_name => "Load Balance Port",
   :description =>
     "Service Port for the load balancer to reach your application servers." +
